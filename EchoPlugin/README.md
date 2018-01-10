@@ -1,0 +1,4 @@
+EchoPlugin
+==========
+
+Phonegap Echo Plugin

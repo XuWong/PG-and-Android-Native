@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="fr.nconcepts.plugin"
+      version="0.1.1">
+    <name>Echo</name>
+    <description>Sample PhoneGap Echo Plugin</description>
+    <license>MIT</license>
+    <keywords>phonegap,echo</keywords>
+ 
+ 
+    <js-module src="www/echo.js" name="Echo">
+        <clobbers target="window.sendEcho" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Echo">
+                <param name="android-package" value="fr.nconcepts.plugin.Echo"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/Echo.java" target-dir="src/fr/nconcepts/plugin" />     
+     </platform>         
+</plugin>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Test</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    <string name="action_pic">Secure Picture</string>
+    <string name="action_nfc">Secure NFC</string>
+    <string name="sp_address">address</string>
+    <string name="sp_name">settings</string>
+    <string name="bc_server_account">8c9c2121ce7a17e3bfa74dab35b453ea662a38ea</string>
+</resources>
