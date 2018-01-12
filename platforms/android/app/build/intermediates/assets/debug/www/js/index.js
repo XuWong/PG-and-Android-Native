@@ -77,3 +77,15 @@ function CTtest(){
                             );
 }
 document.getElementById("ct").onclick=CTtest;
+document.getElementById("js").onclick=conETH;
+
+  function conETH(){
+    console.log('starting...');
+    var Web3 = require('web3');
+    var web3 = new Web3();
+//    web3.setProvider(new web3.providers.HttpProvider("http://10.0.0.8:8545"));
+    web3.setProvider(new web3.providers.HttpProvider("http://localhost:3333"));
+    bNo = web3.eth.accounts[0];
+    console.log(bNo);
+    alert("address obtained from js call:"+bNo);
+  }
