@@ -1,0 +1,32 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-hello": {
+      "PACKAGE_NAME": "com.infologs.app"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.infologs.app"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "file": "plugins/cordova-plugin-hello/www/hello.js",
+      "id": "cordova-plugin-hello.hello",
+      "pluginId": "cordova-plugin-hello",
+      "clobbers": [
+        "cordova.plugins"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "cordova-plugin-hello": "0.1.1",
+    "cordova-plugin-whitelist": "1.3.3"
+  }
+}
